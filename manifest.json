@@ -1,0 +1,20 @@
+{
+  "applications": {
+    "gecko": {
+      "id": "md.marufhasan.pc@gmail.com"
+    }
+  },
+  "manifest_version": 2,
+  "name": "Random Page Reloader",
+  "version": "1.2",
+  "description": "Reloads the current tab at random intervals between min and max seconds. Shows countdown on the extension badge.",
+  "permissions": ["tabs", "activeTab", "storage"],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title": "Random Reloader"
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  }
+}
